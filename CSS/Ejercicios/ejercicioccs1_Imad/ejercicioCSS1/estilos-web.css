@@ -1,0 +1,125 @@
+body {
+    /* Fuente: 'Open Sans', sans-serif. 
+    font-family: 'Open Sans', sans-serif;*/
+    /*Tamaño de fuente: 14px  Color de fuente: neg */
+    font: 14px black 'Open Sans', sans-serif;
+    /* Color de fondo: blanco */
+    background-color: white;
+}
+
+/*  La cabecera <header> y el pie <footer> tienen: */
+header,
+footer {
+    /*  borde continuo*/
+    border: solid #3f3f3f 2px;
+    /* Color de fondo gris claro */
+    background-color: #e6e7e8;
+    /* Color de borde color gris oscuro #3f3f3f 
+    border-color: #3f3f3f;
+    /* Borde 2px de ancho. 
+    border-width: 2px;
+    /*Borde redondeado de 5px  */
+    border-radius: 5px;
+}
+
+footer {
+    /* Color de fuente: gris oscuro */
+    color: #3f3f3f;
+    /* Caltura de 2rem*/
+    height: 2rem;
+}
+
+/* logo  se encuentra dentro de la cabecera <header>*/
+header>img#logo {
+    width: 5rem;
+    height: 4.35rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bree Serif', serif;
+    /* Color de fuente: azul */
+    color: #00acdd;
+}
+
+header>h1 {
+    /* Color de fuente: azul oscuro */
+    color: #00acdd;
+    font-weight: bold;
+}
+
+header > h1  > span#subject {
+    /* Color de fuente: verde */
+    color: #96bc33;
+}
+
+a:link{
+    text-decoration: none;
+    color: #00acdd;
+}
+a:visited{
+    color: red;
+}
+
+a:hover{
+    cursor: pointer;
+    color: #f58a1e;
+}
+
+nav > ul > li{
+    list-style-type: none;
+}
+
+nav#main-menu{
+    background-color: #004166;
+    font-weight: bold;
+    border: solid #e6e7e8 2px;
+
+    /*  borde continuo
+    border-style: inset;
+    /* Borde 2px de ancho.
+    border-width: 2px;
+    border-color: #e6e7e8;
+
+    /*Borde redondeado de 5px  */
+    border-radius: 5px;
+}
+
+main > section#main-section{
+    border: solid 2px #004166;
+    border-radius: 5px;
+
+}
+
+main > section#main-section >h2{
+text-align: center;
+}
+
+main > section#main-section > article.news-art{
+    border-radius: 10px;
+    border: solid 5px #e6e7e8;
+    width: 50%;
+}
+main > section#main-section > article.news-art >img{
+
+    width: 30%;
+    height: auto;
+
+}
+
+main > section#main-section > article.news-art >p{
+
+    width: 70%;
+    height: auto;
+    text-align: justify;
+
+}
+f58a1e
+main > section#main-section > article.news-art:first-of-type{
+background-color: #e6e7e8;
+border: solid #f58a1e;
+}
