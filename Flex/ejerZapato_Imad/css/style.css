@@ -1,3 +1,10 @@
+.boton-cesta {
+  display: flex;
+  align-self:center ;
+  background-color: yellow;
+  text-align: center;
+  
+}
 section {
   display: flex;
   flex-direction: column;
@@ -7,24 +14,25 @@ main>section>article {
   border: 1px solid grey;
   margin: 1rem;
 }
-
+img{
+  display: flex;
+  order: 0;
+}
 h3 {
   text-align: center;
 }
-
-main>section>img {
+.item-oferta{
+  display: flex;
+}
+main>section>article>img {
   width: 100%;
   height: auto;
 }
 
-.boton-cesta {
-  display: flex;
-  align-self:center ;
-  background-color: yellow;
-  text-align: center;
-  
-}
+
 article p { 
+  order: 1;
+
   font-family: Merriweather;
   line-height: 1.6; 
 }
