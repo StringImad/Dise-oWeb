@@ -1,0 +1,36 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+main>section>article {
+  border: 1px solid grey;
+  margin: 1rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+main>section>img {
+  width: 100%;
+  height: auto;
+}
+
+.boton-cesta {
+  display: flex;
+  align-self:center ;
+  background-color: yellow;
+  text-align: center;
+  
+}
+article p { 
+  font-family: Merriweather;
+  line-height: 1.6; 
+}
+@media all and (min-width:768px) {
+  section {
+    flex-direction: row;
+  }
+
+}
