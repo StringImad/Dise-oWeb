@@ -31,11 +31,11 @@ header img#logo {
   height: 4.35rem;
 }
 
-#hamburger {
+div#content> nav#main-menu>#hamburger {
   display: none;
 }
 
-#hamburger:checked~ul {
+div#content> nav#main-menu>#hamburger:checked~ul {
 
   display: block;
 }
@@ -147,10 +147,14 @@ div#content main section article.news-art p {
 }
   
 @media all and (min-width:800px) {
-  #hamburger{
-    display: none;
-  }
-  nav#main-menu ul{
+
+div#content> nav#main-menu>#hamburger:checked~ul {
+    display: flex;
+    flex-direction: row;
+
+}
+   
+  div#content> nav#main-menu>ul{
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -160,4 +164,30 @@ div#content main section article.news-art p {
       display: none;
   
     }
+    div#content main section#principal article#primerElemento{
+
+    display:flex;
+    flex: 1 100%;
+
+
+    }
+	section{
+	  display: flex;
+	  flex-direction: row;
+	flex-wrap: wrap;
+	}
+    article{
+    background-color:red;
+    display:flex;
+    flex-direction:row;
+
+
+	text-align:left;
+	flex:1 50%;
+
+    }
+ 
+   
+
+    
 }
