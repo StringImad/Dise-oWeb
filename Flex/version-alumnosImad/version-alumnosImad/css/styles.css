@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: black;
   background-color: white;
@@ -31,16 +31,15 @@ header img#logo {
   height: 4.35rem;
 }
 
-div#content> nav#main-menu>#hamburger {
+div#content > nav#main-menu > #hamburger {
   display: none;
 }
 
-div#content> nav#main-menu>#hamburger:checked~ul {
-
+div#content > nav#main-menu > #hamburger:checked ~ ul {
   display: block;
 }
 
-section{
+section {
   display: block;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   color: #00acdd;
 }
 
@@ -96,13 +95,13 @@ nav ul li {
 nav ul {
   padding-left: 0;
 }
-main>section>h2{
+main > section > h2 {
   text-align: center;
 }
-main>section>article>h3{
+main > section > article > h3 {
   text-align: center;
 }
-nav>label>span {
+nav > label > span {
   display: flex;
   color: white;
   font-size: 25px;
@@ -116,9 +115,9 @@ nav#main-menu {
   border: 2px solid #e6e7e8;
   border-radius: 5px;
 }
-nav#main-menu ul{
-text-align: center;
-display: none;
+nav#main-menu ul {
+  text-align: center;
+  display: none;
 }
 
 main section#principal {
@@ -145,49 +144,42 @@ div#content main section article.news-art img {
 div#content main section article.news-art p {
   padding: 0 1rem;
 }
-  
-@media all and (min-width:800px) {
 
-div#content> nav#main-menu>#hamburger:checked~ul {
+@media all and (min-width: 800px) {
+  div#content > nav#main-menu > #hamburger:checked ~ ul {
     display: flex;
     flex-direction: row;
+  }
 
-}
-   
-  div#content> nav#main-menu>ul{
+  div#content > nav#main-menu > ul {
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    }
-    nav>label>span {
-      display: none;
-  
-    }
-    div#content main section#principal article#primerElemento{
-
-    display:flex;
+  }
+  nav > label > span {
+    display: none;
+  }
+  div#content main section#principal article#primerElemento {
+    display: flex;
     flex: 1 100%;
-
-
-    }
-	section{
-	  display: flex;
-	  flex-direction: row;
-	flex-wrap: wrap;
-	}
-    article{
-    background-color:red;
-    display:flex;
-    flex-direction:row;
-
-
-	text-align:left;
-	flex:1 50%;
-
-    }
- 
-   
-
-    
+  }
+  div#content main section#principal article > h3 {
+    width: 100%;
+    text-align: left;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  article {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 }
