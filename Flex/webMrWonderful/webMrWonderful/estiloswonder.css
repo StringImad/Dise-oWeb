@@ -239,23 +239,38 @@ small {
 /*En la cabecera va logo e iconos en la misma línea y debajo el menú*/
 /*Hay 4 artículos por fila*/
 /*La barra social y el menú adicional están uno al lado del otro*/
-@media all and (min-width:800px) {
+@media all and (min-width:700px) {
 
-	div#content>nav#main-menu>#hamburger:checked~ul {
+	header>nav#menu-principal>#hamburguesa:checked~ul {
+		margin-top: auto;
 		display: flex;
 		flex-direction: row;
 
 	}
 
-	div#content>nav#main-menu>ul {
+	header>nav#menu-principal>ul {
 		text-align: center;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 	}
 
-	nav>label>span {
+	nav>label>   {
 		display: none;
 
 	}
+	  section {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	  }
+	  article {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+		width: 50%;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	  }
 }
