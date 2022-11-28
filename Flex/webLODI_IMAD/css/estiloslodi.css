@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Hacemos la cabecera flexible*/
+header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-flow: row;
+  align-items: center;
+  padding: 0.5rem;
+}
+/*logos*/
+
+/*logo principal LODI*/
+header > picture {
+  display: flex;
+  justify-content: center;
+  order: 5;
+  margin: auto 3rem;
+}
+header > picture > img {
+  height: 2rem;
+}
+/*logo hamburgesa*/
+header > nav#menu-principal {
+  display: flex;
+  justify-content: start;
+  order: 0;
+}
+header > nav#menu-principal > label {
+  color: rgb(59, 59, 59);
+}
+/*logo lupa*/
+header > nav#buscador {
+  order: 1;
+  flex-grow: 1;
+}
+/*logo bolsa*/
+header > nav#compra {
+  order: 6;
+  flex-grow: 2;
+  text-align: end;
+}
+/*oculta logo menu */
+header > nav#menu-principal > input#menu-hamburger {
+  display: none;
+}
+
+header > nav#menu-principal > ul#menu {
+  display: none;
+}
+
+header > nav#buscador > ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+header > nav#buscador > ul > li > a > i {
+  color: #767373;
+}
+
+header > nav#compra > ul {
+  list-style: none;
+}
+
+header > nav#compra > ul > li > a > i {
+  color: #767373;
+}
+
+/*Los artículos tienen que ser flexibles*/
+main {
+
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-grow: 2;
+}
+
+main > article.item {
+    width: 49%;
+
+  display: flex;
+  flex-flow: column-reverse ;
+  justify-content: center;
+
+}
+
+main > article.item > a {
+  text-decoration: none;
+  display: flex;
+}
+
+main > article.item > a > h3 {
+  color: black;
+}
+
+main > article.item > p {
+  order: -1;
+  margin-top: auto;
+}
+
+main > article.item > a > picture {
+padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+main > article.item > a > picture > img {
+    max-width: 100%;
+  height: auto;
+}
+
+/*Hacemos el pie flexible*/
+footer {
+  display: flex;
+  flex-flow: column;
+}
+
+footer >nav> ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+footer > nav#menu-adicional {
+
+  display: flex;
+}
+
+footer > nav#menu-adicional > ul {
+  flex-flow: column;
+
+  flex: 100%;
+}
+
+footer > nav#menu-adicional > ul > li {
+  flex: 100%;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #767373;
+
+}
+
+footer > nav#menu-adicional > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+footer > nav#iconos-sociales {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer > nav#iconos-sociales > ul > li {
+  color: #767373;
+  margin: 0.3rem;
+}
+
+footer > nav#iconos-sociales > ul > li > a {
+  color: #767373;
+}

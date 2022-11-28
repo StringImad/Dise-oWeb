@@ -1,0 +1,111 @@
+/*----------HEADER---------------*/
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+}
+header > picture#logo-cabecera > img {
+  width: 70%;
+}
+header > nav#bloque-iconos {
+  margin: auto 0 0 auto;
+}
+header > nav#bloque-iconos > ul {
+  color: black;
+  display: flex;
+  list-style: none;
+}
+header > nav#bloque-iconos > ul > li > a {
+  color: black;
+  font-size: 2rem;
+  padding: 0.7rem;
+}
+
+header > nav#menu-principal {
+  background-color: black;
+  order: 1;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  flex: 100%;
+}
+header > nav#menu-principal > div#hamburguesa {
+  color: white;
+  font-size: 2rem;
+}
+header > nav#menu-principal > div#hamburguesa > span:first-child {
+  display: flex;
+  justify-content: center;
+}
+header > nav#menu-principal > ul {
+  display: none;
+  flex: 100%;
+}
+/*----------FIN HEADER---------------*/
+/*----------MAIN---------------*/
+main > section#form-contacto {
+  display: flex;
+  flex-direction: column;
+}
+main > section > h2 {
+  display: flex;
+  justify-content: center;
+}
+main > section > form#contacto {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+main > section > form#contacto > label {
+  visibility: hidden;
+}
+
+main > section#form-contacto > form#contacto > input,
+select,
+textarea {
+  width: 50%;
+  padding: 0.5rem 0.2rem;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+main > section#form-contacto > form#contacto > input:focus,
+select:focus,
+textarea:focus {
+  background-color: black;
+  border: 6px solid grey;
+}
+main > section#form-contacto > form#contacto > textarea {
+  margin-bottom: 0.5rem;
+}
+main > section#form-contacto > form#contacto > select {
+  color: grey;
+  background-color: rgb(185, 185, 185);
+}
+main > section#form-contacto > form#contacto > input[type="button"] {
+  color: white;
+  background-color: black;
+}
+/*----------FIN MAIN---------------*/
+/*----------FOOTER---------------*/
+
+footer {
+  background-color: black;
+}
+
+footer > nav#menu-adicional > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+footer > nav#menu-adicional > ul>li {
+    padding: 0.3rem;
+  }
+footer > nav#menu-adicional > ul>li>a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+  footer > nav#menu-adicional > ul>li>a:hover {
+    color: gold;
+  }
